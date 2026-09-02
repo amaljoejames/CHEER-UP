@@ -1,0 +1,2474 @@
+You are an expert creative frontend engineer, interaction designer, motion designer, and romantic digital-experience designer.
+
+Build a COMPLETE, production-quality, extremely long, highly interactive, scroll-driven 6-MONTH ANNIVERSARY WEBSITE for a couple.
+
+This is NOT a normal landing page.
+
+This should feel like a personal interactive digital love letter / mini romantic game / Pinterest + Instagram + Pookie-core scrapbook experience.
+
+The website must be VERY LONG.
+
+I want a genuinely huge scrolling experience with many different sections, animations, transitions, interactions, memories, photos, videos, cute memes, romantic messages, playful moments, and an emotional ending.
+
+DO NOT create a short website.
+
+DO NOT make only 5–6 sections.
+
+The experience should feel like the visitor is slowly travelling through the couple's relationship.
+
+Think:
+
+Pinterest couple aesthetic
+Instagram anniversary reel
+Pookie-core
+soft romance
+cute internet couple culture
+handmade scrapbook
+digital love letter
+interactive story
+cinematic scrolling website
+cute cat memes
+tiny hearts
+Polaroids
+handwritten notes
+love locks
+scrapbook paper
+soft pastel romance
+playful UI
+emotional storytelling
+
+The final result should feel extremely personal, cute, nostalgic, slightly silly, romantic, and memorable.
+
+====================================================
+CORE CONCEPT
+====================================================
+
+This website celebrates:
+
+"6 MONTHS OF US"
+
+The experience should communicate:
+
+"Six months.
+Hundreds of memories.
+Thousands of little moments.
+One person I would still choose again."
+
+Do NOT make the copy sound like a corporate website.
+
+Everything should sound like a real person made this specifically for their partner.
+
+Use a mixture of:
+
+English
+cute Hinglish
+internet slang
+"Pookie"
+"babyyy"
+"my love"
+"cutie"
+"idiot"
+"meri jaan"
+"my favorite human"
+"my comfort person"
+"my safe place"
+
+But don't overuse the same word.
+
+The writing should alternate between:
+
+cute
+funny
+romantic
+nostalgic
+emotional
+playful
+
+====================================================
+IMPORTANT ASSETS
+====================================================
+
+I have approximately 62 total personal media assets.
+
+These include:
+
+- individual photos
+- couple photos
+- personal memories
+- some videos
+
+The final website must be designed around these 62 assets.
+
+DO NOT simply place all 62 assets in one gallery.
+
+Instead, distribute them naturally throughout the entire experience.
+
+Use the personal media as storytelling material.
+
+Create a centralized media configuration/data structure so I can easily replace filenames later.
+
+Example:
+
+const memories = [
+  {
+    type: "image",
+    src: "/assets/photo01.jpg",
+    caption: "...",
+    category: "memory"
+  },
+  {
+    type: "video",
+    src: "/assets/video01.mp4",
+    caption: "...",
+    category: "moment"
+  }
+];
+
+Make it extremely easy for me to replace assets.
+
+If an asset doesn't exist yet, use a beautiful placeholder with a clear comment showing exactly where the asset should be inserted.
+
+DO NOT break the website if some media files are temporarily missing.
+
+Use graceful fallback placeholders.
+
+====================================================
+REFERENCE AESTHETIC
+====================================================
+
+The attached reference images show the desired general aesthetic.
+
+Take inspiration from:
+
+- cute couple scrapbook layouts
+- romantic Canva-style presentations
+- red/pink/pastel anniversary cards
+- Polaroid photos
+- cute cat graphics
+- handwritten typography
+- tiny doodled hearts
+- love notes
+- digital scrapbook pages
+- "I LOVE YOU POOKIE" energy
+- playful internet couple memes
+
+BUT DO NOT simply copy the references.
+
+Create an original, much more sophisticated interactive experience.
+
+====================================================
+TECH STACK
+====================================================
+
+Use:
+
+React
+Vite
+JavaScript or TypeScript
+CSS / modern CSS
+GSAP if useful
+Framer Motion if useful
+Lenis or another smooth scrolling library if useful
+
+Prioritize:
+
+performance
+mobile responsiveness
+smooth animation
+clean component architecture
+easy asset replacement
+
+Do NOT depend on obscure libraries that may fail in Replit.
+
+If a library creates installation issues, implement the effect using native CSS/JS.
+
+====================================================
+FIRST SCREEN — THE LOVE LOCK
+====================================================
+
+VERY IMPORTANT:
+
+The entire anniversary website must be LOCKED initially.
+
+When the website loads, the visitor should NOT immediately see the anniversary content.
+
+Instead show a beautiful full-screen "Love Lock" experience.
+
+Background:
+
+soft pink/red gradient
+tiny floating hearts
+subtle sparkles
+blurred romantic shapes
+small animated particles
+
+Center:
+
+large cute illustrated/digital love lock.
+
+Above it:
+
+"SHHH... THIS LITTLE WORLD IS LOCKED."
+
+Then:
+
+"Only one very special pookie knows the password."
+
+Under the lock:
+
+"Enter the secret code"
+
+Create a 4-digit passcode UI.
+
+The correct password is:
+
+0203
+
+This is intentional.
+
+The hint should be:
+
+"Hint: the date/month of the first time you said
+'I LOVE YOU' ❤️"
+
+Do NOT reveal 0203 anywhere before successful unlocking.
+
+The keypad should contain:
+
+1 2 3
+4 5 6
+7 8 9
+* 0 #
+
+and an Enter button.
+
+Create a beautiful animated keypad.
+
+Each button should have:
+
+- hover animation
+- press animation
+- subtle soundless feedback
+- tiny heart particle when pressed
+
+The entered numbers should appear as:
+
+♡ ♡ ♡ ♡
+
+or cute glowing digits.
+
+====================================================
+WRONG PASSWORD BEHAVIOR
+====================================================
+
+If the entered password is incorrect:
+
+DO NOT simply show "Wrong password."
+
+Make it playful.
+
+Examples:
+
+"EXCUSE ME??? 🥺"
+
+"That's not the pookie password."
+
+"Try again, baby 😭💗"
+
+"Nice try, impostor 👀"
+
+"Only my favorite human gets in."
+
+Animate the lock slightly shaking.
+
+Make tiny hearts wobble.
+
+After a few wrong attempts, progressively make the messages funnier.
+
+Example:
+
+Attempt 1:
+"nope baby 😭"
+
+Attempt 2:
+"POOKIE... think harder 🥺"
+
+Attempt 3:
+"Are you even my pookie??? 😭"
+
+But never make it annoying.
+
+Allow unlimited attempts.
+
+====================================================
+CORRECT PASSWORD BEHAVIOR
+====================================================
+
+When 0203 is entered correctly:
+
+DO NOT immediately jump to the website.
+
+Create a cinematic unlocking sequence.
+
+Step 1:
+
+The lock glows.
+
+Step 2:
+
+Tiny hearts start appearing.
+
+Step 3:
+
+The lock opens.
+
+Step 4:
+
+Screen flashes softly.
+
+Step 5:
+
+Large text appears:
+
+"ACCESS GRANTED 💗"
+
+Then:
+
+"Welcome to our little world."
+
+Then:
+
+"6 months of us."
+
+Then:
+
+"Scroll down, pookie ↓"
+
+After this, smoothly transition into the main website.
+
+The locked screen should disappear completely.
+
+The user should NOT be able to scroll into the main content before entering the correct password.
+
+====================================================
+SCROLL EXPERIENCE
+====================================================
+
+THIS IS THE MOST IMPORTANT REQUIREMENT.
+
+The website must be EXTREMELY LONG.
+
+I want a VERY VERY VERY LONG scrolling page.
+
+Think of a digital journey rather than a standard website.
+
+The visitor should continuously discover new sections.
+
+Avoid repetitive section templates.
+
+Each section should have its own visual identity and animation behavior.
+
+The page should take significant scrolling to complete.
+
+Target approximately:
+
+20–30+ major sections
+
+with multiple subsections inside each.
+
+Do NOT compress everything into one screen.
+
+====================================================
+GLOBAL SCROLL BEHAVIOR
+====================================================
+
+Use smooth scrolling.
+
+Show a tiny persistent scroll indicator.
+
+At appropriate moments display:
+
+"keep scrolling ↓"
+
+"there's more 🥺"
+
+"wait... don't leave yet"
+
+"one more memory ↓"
+
+"pookie, scroll"
+
+"we're only halfway there"
+
+Use these sparingly.
+
+As the user scrolls:
+
+- elements fade in
+- photos slide
+- cards rotate slightly
+- handwritten text appears
+- hearts float
+- backgrounds morph
+- images scale
+- text reveals line-by-line
+- scrapbook pieces move into place
+- polaroids overlap
+- videos autoplay when visible where browser policy allows
+- sections transition smoothly
+
+Do NOT animate everything simultaneously.
+
+Animation should feel intentional.
+
+====================================================
+SECTION 01 — THE WELCOME
+====================================================
+
+After unlocking:
+
+Huge typography:
+
+"6 MONTHS."
+
+Then underneath:
+
+"of us being us."
+
+Small text:
+
+"and honestly...
+I'd choose you all over again."
+
+Add a giant animated heart.
+
+Then:
+
+"Scroll down, pookie ↓"
+
+Use a slow floating heart animation.
+
+====================================================
+SECTION 02 — THE INTRODUCTION
+====================================================
+
+Create a scrapbook-style introduction.
+
+Text:
+
+"Hi, my love."
+
+"Welcome to the tiniest little corner of the internet
+that belongs entirely to us."
+
+Then:
+
+"This isn't just a website."
+
+"It's 6 months of memories,
+inside jokes,
+random pictures,
+stupid conversations,
+cute moments,
+and one very special person."
+
+Use 1–2 personal photos.
+
+Animate each sentence individually.
+
+====================================================
+SECTION 03 — 6 MONTHS COUNTER
+====================================================
+
+Create a huge animated counter.
+
+Display:
+
+6 MONTHS
+
+Then dynamically count/reveal:
+
+180 DAYS
+
+4,320 HOURS
+
+259,200 MINUTES
+
+15,552,000 SECONDS
+
+Use the concept:
+
+"and somehow...
+I still want more time with you."
+
+If exact day count needs customization, put it in a config variable.
+
+Add animated numbers.
+
+====================================================
+SECTION 04 — "HOW IT STARTED"
+====================================================
+
+Create an immersive relationship beginning section.
+
+Title:
+
+"Before we became us..."
+
+Use early individual/couple photos.
+
+Make the photos appear like scattered scrapbook memories.
+
+Add captions such as:
+
+"look at us 🥺"
+
+"we had no idea..."
+
+"that this would become something so special."
+
+Create subtle parallax.
+
+====================================================
+SECTION 05 — FIRST "I LOVE YOU"
+====================================================
+
+This section should reference the password hint concept.
+
+Do NOT reveal the password itself.
+
+Title:
+
+"That one sentence."
+
+Then slowly reveal:
+
+"I LOVE YOU."
+
+Make this text huge.
+
+Animate each word separately.
+
+Then:
+
+"Somehow, three little words
+changed everything."
+
+Create a glowing heart.
+
+Then:
+
+"and yes...
+I remember."
+
+Use an appropriate personal photo if available.
+
+====================================================
+SECTION 06 — OUR TIMELINE
+====================================================
+
+Create a long vertical relationship timeline.
+
+Use multiple milestones.
+
+Example:
+
+THE BEGINNING
+↓
+FIRST CONVERSATIONS
+↓
+FIRST SPECIAL MEMORY
+↓
+FIRST PHOTO
+↓
+FIRST DATE
+↓
+FIRST "I LOVE YOU"
+↓
+MONTH 1
+↓
+MONTH 2
+↓
+MONTH 3
+↓
+MONTH 4
+↓
+MONTH 5
+↓
+MONTH 6
+
+Each milestone should have:
+
+photo
+date placeholder
+short message
+tiny doodle
+animation
+
+Make the timeline very tall.
+
+As the user scrolls, the timeline line should animate progressively.
+
+====================================================
+SECTION 07 — MONTH BY MONTH
+====================================================
+
+Create SIX separate large sections.
+
+MONTH 1
+MONTH 2
+MONTH 3
+MONTH 4
+MONTH 5
+MONTH 6
+
+Each month gets:
+
+unique background treatment
+2–5 photos/videos
+short emotional paragraph
+inside-joke style caption
+tiny heart animation
+memory card
+
+Do not make all six visually identical.
+
+Each month should feel like a chapter.
+
+Example:
+
+"Month 1:
+still figuring out how someone could become this important so quickly."
+
+Month 2:
+"Okay... I think I like you a LOT."
+
+Month 3:
+"At this point you're basically my favorite notification."
+
+Month 4:
+"Somewhere between the random conversations,
+you became home."
+
+Month 5:
+"Five months later and you're still my favorite person to annoy."
+
+Month 6:
+"And now we're here."
+
+Make the wording editable.
+
+====================================================
+SECTION 08 — POLAROID MEMORY WALL
+====================================================
+
+Create a huge scrapbook wall.
+
+Use many personal photos.
+
+Each image should appear as a Polaroid.
+
+Random slight rotations.
+
+Some tilted left.
+Some tilted right.
+
+Add handwritten captions.
+
+Examples:
+
+"my favorite smile"
+
+"hehe us"
+
+"certified pookies"
+
+"why are we like this 😭"
+
+"core memory"
+
+"this one >>>"
+
+Some photos should overlap.
+
+On hover:
+
+Polaroid lifts
+rotates to straight
+scales slightly
+shadow increases
+
+On mobile:
+
+convert to stacked cards without destroying usability.
+
+====================================================
+SECTION 09 — PHOTO REVEAL JOURNEY
+====================================================
+
+Create a horizontal-scrolling-feeling section while still being controlled by vertical scroll.
+
+As user scrolls vertically:
+
+large photos move horizontally.
+
+Use 8–12 personal photos.
+
+Each photo should have a short caption.
+
+Make it cinematic.
+
+Example:
+
+"one picture at a time..."
+
+"because apparently
+we have too many memories."
+
+====================================================
+SECTION 10 — VIDEO MEMORIES
+====================================================
+
+Create a dedicated cinematic video section.
+
+Use the personal videos.
+
+Each video:
+
+autoplays muted when visible
+loops if appropriate
+plays only while visible where practical
+has rounded corners
+has subtle film-frame styling
+
+Add captions underneath.
+
+Example:
+
+"proof that we are actually this chaotic."
+
+"this moment >>>"
+
+"you make ordinary moments feel special."
+
+If autoplay is blocked, show a cute play button.
+
+Do NOT let videos break the layout.
+
+Lazy-load videos.
+
+====================================================
+SECTION 11 — POOKIE MEME MUSEUM
+====================================================
+
+Create a hilarious section.
+
+Title:
+
+"THE POOKIE MEME MUSEUM"
+
+Create multiple meme-style cards.
+
+Use cute cat imagery / doodles / simple CSS illustrations if actual memes are unavailable.
+
+Examples:
+
+CAT:
+"me when pookie texts me"
+
+CAT:
+"me pretending I'm not obsessed"
+
+CAT:
+"POOKIE COME HERE"
+
+CAT:
+"when they say 'I'm fine'"
+
+CAT:
+"me: I'll sleep early tonight"
+
+"also me at 2:37 AM:
+thinking about you"
+
+Include playful animations.
+
+Some cards can wobble when hovered.
+
+Add tiny speech bubbles.
+
+====================================================
+SECTION 12 — "THINGS YOU DO THAT I LOVE"
+====================================================
+
+Create an interactive list.
+
+Examples:
+
+"the way you smile"
+
+"the way you randomly text me"
+
+"your silly reactions"
+
+"how you make ordinary things fun"
+
+"your voice"
+
+"your hugs"
+
+"the way you care"
+
+"your little habits"
+
+Each item appears as the user scrolls.
+
+When clicked:
+
+expand into a tiny personal note.
+
+Make at least 15–20 items.
+
+Allow easy editing.
+
+====================================================
+SECTION 13 — 6 REASONS I LOVE YOU
+====================================================
+
+Create six giant cards.
+
+1.
+"Because you feel like home."
+
+2.
+"Because you make me laugh."
+
+3.
+"Because you understand me."
+
+4.
+"Because ordinary days become memories."
+
+5.
+"Because you're my favorite person."
+
+6.
+"Because somehow...
+it's always you."
+
+Each card should animate differently.
+
+====================================================
+SECTION 14 — 180 LITTLE REASONS
+====================================================
+
+Create a special interactive section based on:
+
+"6 months = approximately 180 days."
+
+Title:
+
+"180 little reasons."
+
+Subtitle:
+
+"I could write one for every day."
+
+Create an animated grid/list of many tiny notes.
+
+Populate at least 60–100 initially with meaningful short phrases, and make the architecture capable of supporting all 180.
+
+Examples:
+
+"your smile"
+
+"your patience"
+
+"your random texts"
+
+"your hugs"
+
+"your sleepy voice"
+
+"your laugh"
+
+"your kindness"
+
+"your weird jokes"
+
+"the way you look at me"
+
+"the way you make me feel safe"
+
+Each note should appear like a tiny paper scrap.
+
+Some can be randomized slightly.
+
+Clicking one expands it.
+
+Do NOT make all reasons generic.
+
+====================================================
+SECTION 15 — OPEN WHEN LETTERS
+====================================================
+
+Create interactive envelopes.
+
+Examples:
+
+OPEN WHEN YOU MISS ME
+
+OPEN WHEN YOU'RE SAD
+
+OPEN WHEN YOU NEED A HUG
+
+OPEN WHEN YOU CAN'T SLEEP
+
+OPEN WHEN YOU NEED TO SMILE
+
+OPEN WHEN YOU WANT TO KNOW HOW MUCH I LOVE YOU
+
+Each envelope should open when clicked.
+
+Inside:
+
+a heartfelt message.
+
+Use handwritten typography.
+
+Animate the paper unfolding.
+
+====================================================
+SECTION 16 — SIX ENVELOPES FOR SIX MONTHS
+====================================================
+
+Create six large envelopes.
+
+Each represents one month.
+
+Month 1
+Month 2
+Month 3
+Month 4
+Month 5
+Month 6
+
+When clicked, reveal:
+
+memory
+photo
+message
+tiny surprise
+
+Make them feel like physical letters.
+
+====================================================
+SECTION 17 — OUR FAVORITE THINGS
+====================================================
+
+Create playful cards:
+
+Favorite food
+
+Favorite place
+
+Favorite movie
+
+Favorite song
+
+Favorite inside joke
+
+Favorite photo
+
+Favorite memory
+
+Favorite thing about you
+
+Favorite thing we do together
+
+Use icons and animations.
+
+Make content editable.
+
+====================================================
+SECTION 18 — OUR LITTLE THINGS
+====================================================
+
+Create a scrapbook section for tiny relationship habits.
+
+Examples:
+
+"our random good morning texts"
+
+"our stupid jokes"
+
+"our unnecessary arguments about nothing"
+
+"our favorite emojis"
+
+"our late-night conversations"
+
+"our weird nicknames"
+
+"our tiny traditions"
+
+"our 'did you eat?' messages"
+
+Make each appear as a little collectible item.
+
+====================================================
+SECTION 19 — CHAT / TEXT MESSAGE SIMULATION
+====================================================
+
+Create a fake but clearly stylized relationship chat interface.
+
+DO NOT connect to a real messaging service.
+
+Use predefined editable messages.
+
+Example:
+
+Me:
+"what are you doing?"
+
+Them:
+"nothing"
+
+Me:
+"miss me?"
+
+Them:
+"maybe"
+
+Me:
+"liar"
+
+Them:
+"okay yes 😭"
+
+Make messages appear sequentially as user scrolls.
+
+Include cute typing indicators.
+
+====================================================
+SECTION 20 — PLAYLIST
+====================================================
+
+Create:
+
+"OUR LITTLE SOUNDTRACK"
+
+Display songs with:
+
+title
+artist
+reason
+
+Add a fake cassette / CD / music player aesthetic.
+
+If actual audio files are provided, support them.
+
+Otherwise use a playlist-style UI without copyrighted audio.
+
+Add:
+
+"this song reminds me of you."
+
+====================================================
+SECTION 21 — QR PLAYLIST CARD
+====================================================
+
+Create a cute physical-card-style component.
+
+Text:
+
+"SCAN THIS WHEN YOU MISS ME."
+
+Include a configurable QR code placeholder.
+
+Allow me to replace the QR target URL.
+
+Make the card look handmade.
+
+====================================================
+SECTION 22 — OUR FIRST DATE RECREATION
+====================================================
+
+Create a section titled:
+
+"Let's go back."
+
+Recreate the first date/memory visually.
+
+Use:
+
+photo
+place
+what happened
+what I remember
+what I was thinking
+
+Make the section feel nostalgic.
+
+Use a map-like illustration if appropriate, but do not require external APIs.
+
+====================================================
+SECTION 23 — MEMORY TREASURE HUNT
+====================================================
+
+Create an interactive treasure hunt.
+
+Display:
+
+"Find the hidden hearts."
+
+Scatter small hearts around the section.
+
+When clicked:
+
+tiny messages appear.
+
+After collecting enough hearts:
+
+unlock:
+
+"SECRET MESSAGE 💗"
+
+Then display a special romantic note.
+
+Make this a small game.
+
+====================================================
+SECTION 24 — LOVE COUPONS
+====================================================
+
+Create digital coupons.
+
+Examples:
+
+"ONE FREE HUG"
+
+"ONE MOVIE NIGHT"
+
+"ONE SNACK CHOOSING PRIVILEGE"
+
+"ONE FOREHEAD KISS"
+
+"ONE 'YOU WIN' ARGUMENT"
+
+"ONE EMERGENCY CUDDLE"
+
+"ONE DATE OF YOUR CHOICE"
+
+Make them tear-off coupon style.
+
+Add small animations.
+
+====================================================
+SECTION 25 — POOKIE EMERGENCY KIT
+====================================================
+
+Create a cute visual emergency kit.
+
+Title:
+
+"POOKIE EMERGENCY KIT"
+
+Contents:
+
+1 hug
+2 compliments
+3 snacks
+4 kisses
+5 reassurance
+∞ love
+
+Make each item clickable.
+
+Clicking:
+
+HUG → "come here 🫂"
+
+COMPLIMENT → random compliment
+
+SNACK → "go eat something, pookie 😭"
+
+LOVE → heart explosion
+
+====================================================
+SECTION 26 — "IF YOU WERE A..."
+====================================================
+
+Create playful comparisons.
+
+"If you were a color..."
+
+"If you were a song..."
+
+"If you were a season..."
+
+"If you were a flower..."
+
+"If you were a dessert..."
+
+"If you were a cat..."
+
+"If you were a place..."
+
+"If you were a feeling..."
+
+Each gets an illustrated card.
+
+====================================================
+SECTION 27 — CHILDHOOD / THEN & NOW
+====================================================
+
+If childhood photos are available:
+
+create a "THEN VS NOW" section.
+
+Use split-screen photos.
+
+Left:
+
+"tiny us"
+
+Right:
+
+"us now"
+
+Add:
+
+"Imagine telling these two people
+they'd end up here."
+
+If childhood photos aren't available, gracefully replace with earliest-vs-current memories.
+
+====================================================
+SECTION 28 — PHOTO RECREATION
+====================================================
+
+Create a section:
+
+"WE SHOULD RECREATE THIS."
+
+Show an old photo.
+
+Then show current photo.
+
+Use side-by-side comparison.
+
+Add playful text:
+
+"same people"
+
+"slightly more obsessed"
+
+"still pookies"
+
+====================================================
+SECTION 29 — THINGS I WANT TO DO WITH YOU
+====================================================
+
+Create a long bucket list.
+
+Examples:
+
+watch sunrise
+
+take random photos
+
+go on a late-night drive
+
+try a new café
+
+make a scrapbook
+
+take photobooth pictures
+
+travel somewhere
+
+cook together
+
+have a movie marathon
+
+watch stars
+
+take matching pictures
+
+make more memories
+
+Create checkboxes.
+
+Some can be marked "DONE ❤️".
+
+====================================================
+SECTION 30 — FUTURE US
+====================================================
+
+Slow down the website emotionally.
+
+Darken the background slightly.
+
+Show:
+
+"6 months down..."
+
+Then:
+
+"and hopefully
+so many more to go."
+
+Create floating future-memory placeholders.
+
+Text:
+
+"more dates"
+
+"more photos"
+
+"more stupid jokes"
+
+"more hugs"
+
+"more adventures"
+
+"more us"
+
+====================================================
+SECTION 31 — A LETTER TO YOU
+====================================================
+
+This should be one of the emotional highlights.
+
+Create a huge handwritten letter.
+
+Start:
+
+"Dear my favorite person,"
+
+Then a long heartfelt editable paragraph.
+
+Write naturally.
+
+Do NOT make it sound like AI.
+
+Include themes:
+
+how the relationship changed everyday life
+how small moments matter
+how memories became precious
+how grateful I am
+how I want more time together
+how this person feels special
+how six months may sound small but means a lot
+
+Reveal the letter gradually as the user scrolls.
+
+Use a paper texture.
+
+====================================================
+SECTION 32 — "IF I COULD PAUSE TIME"
+====================================================
+
+Create a cinematic section.
+
+Large text:
+
+"If I could pause time..."
+
+Then:
+
+"I'd probably pause it
+somewhere between
+your laugh
+and one of our random little moments."
+
+Use slow parallax photos.
+
+====================================================
+SECTION 33 — MEMORY CONSTELLATION
+====================================================
+
+Create a dark/night-sky section.
+
+Each star represents a memory.
+
+Click stars.
+
+Each opens:
+
+photo
+caption
+date
+message
+
+Connect stars with subtle glowing lines.
+
+At the end the constellation forms a heart.
+
+====================================================
+SECTION 34 — OUR LOVE EQUATION
+====================================================
+
+Make a playful fake mathematical formula.
+
+Example:
+
+1 pookie
++
+1 pookie
++
+∞ inside jokes
++
+too many photos
++
+countless conversations
+=
+US ❤️
+
+Animate the formula.
+
+Then:
+
+"Scientific conclusion:
+I love you."
+
+====================================================
+SECTION 35 — POOKIE AWARDS
+====================================================
+
+Create award cards.
+
+Examples:
+
+BEST SMILE AWARD
+
+BEST HUG AWARD
+
+MOST ADORABLE HUMAN AWARD
+
+MOST LIKELY TO MAKE ME SMILE AWARD
+
+BEST PERSONALITY AWARD
+
+BEST PERSON TO ANNOY AWARD
+
+LIFETIME POOKIE AWARD
+
+Make the final award:
+
+"MY FAVORITE PERSON — FOREVER"
+
+====================================================
+SECTION 36 — THE 62 MEMORY GALLERY
+====================================================
+
+Eventually reveal all available personal assets.
+
+But don't make this a boring grid.
+
+Create a cinematic gallery.
+
+Organize:
+
+SOLO MOMENTS
+
+TOGETHER
+
+RANDOM
+
+CUTE
+
+CHAOTIC
+
+VIDEOS
+
+BEST OF US
+
+Use masonry/scrapbook layout.
+
+Each item:
+
+hover
+caption
+small date
+heart button
+
+If an image is clicked:
+
+open fullscreen lightbox.
+
+Lightbox should support:
+
+next
+previous
+close
+caption
+counter
+
+Example:
+
+"17 / 62"
+
+====================================================
+SECTION 37 — RANDOM MEMORY MACHINE
+====================================================
+
+Create a button:
+
+"SHOW ME A RANDOM MEMORY"
+
+When clicked:
+
+random personal photo/video appears.
+
+Add animation.
+
+Text:
+
+"Remember this?"
+
+Then a small message.
+
+Make it replayable.
+
+====================================================
+SECTION 38 — "THIS ONE IS MY FAVORITE"
+====================================================
+
+Create a huge cinematic photo.
+
+Initially blurred.
+
+As user scrolls, gradually sharpen it.
+
+Text:
+
+"Okay...
+I have a lot of favorite pictures."
+
+"But this one..."
+
+Reveal:
+
+"this one is special."
+
+Use a configurable favorite image.
+
+====================================================
+SECTION 39 — HEART EXPLOSION
+====================================================
+
+Create a playful interactive button:
+
+"DO NOT PRESS"
+
+Obviously users press it.
+
+After pressing:
+
+heart explosion
+confetti
+cats
+tiny "I LOVE YOU" messages
+floating emojis
+
+Then:
+
+"okay maybe you were supposed to press it."
+
+====================================================
+SECTION 40 — FINAL COUNTDOWN
+====================================================
+
+Begin emotional ending.
+
+Show:
+
+"6 months."
+
+Then:
+
+"180 days."
+
+Then:
+
+"countless little moments."
+
+Then:
+
+"62+ memories."
+
+Then:
+
+"one very important person."
+
+Pause.
+
+Then:
+
+"you."
+
+====================================================
+SECTION 41 — FINAL LOVE LETTER
+====================================================
+
+Create the most emotional section.
+
+Background becomes soft and minimal.
+
+Large centered text:
+
+"Before you leave..."
+
+Then a long heartfelt message.
+
+Something in the spirit of:
+
+"Thank you for every little moment.
+For every conversation.
+For every laugh.
+For every random picture.
+For every hug.
+For being there.
+For becoming such an important part of my life.
+
+Six months might just be a number,
+but these six months are filled with memories
+I never want to forget.
+
+And if I got the chance to start again...
+
+I'd still choose you."
+
+Make this highly editable.
+
+====================================================
+SECTION 42 — FINAL PHOTO
+====================================================
+
+Display the strongest couple photo.
+
+Huge.
+
+Almost cinematic.
+
+Add:
+
+"MY FAVORITE PERSON."
+
+Then:
+
+"MY POOKIE."
+
+Then:
+
+"MY HOME."
+
+Do not overload the screen.
+
+Let the image breathe.
+
+====================================================
+SECTION 43 — FINAL QUESTION
+====================================================
+
+Display:
+
+"SO..."
+
+pause
+
+"6 months?"
+
+Then:
+
+"DO WE DO FOREVER?"
+
+Have two buttons:
+
+"YES 💗"
+
+"OBVIOUSLY 😭"
+
+Both buttons should eventually lead to the same result.
+
+When clicked:
+
+massive heart animation.
+
+====================================================
+SECTION 44 — FINAL ANIMATION
+====================================================
+
+Create a beautiful final animation.
+
+Hundreds of tiny hearts slowly float upward.
+
+Some photos briefly appear inside hearts.
+
+Background becomes a soft pink/red gradient.
+
+Display:
+
+"HAPPY 6 MONTHS, MY LOVE ❤️"
+
+Then:
+
+"Here's to every memory we've made..."
+
+"and every memory we haven't made yet."
+
+Then:
+
+"06 → ∞"
+
+Finally:
+
+"I LOVE YOU, POOKIE."
+
+Then:
+
+"Now come here 🫂"
+
+====================================================
+FINAL SCREEN
+====================================================
+
+Very minimal.
+
+One beautiful photo.
+
+Small heart.
+
+Text:
+
+"THE END."
+
+Then:
+
+"but not really."
+
+Then:
+
+"because this is only chapter 6."
+
+And:
+
+"there's still so much more of us to write."
+
+====================================================
+DESIGN SYSTEM
+====================================================
+
+Primary aesthetic:
+
+Pookie-core romantic scrapbook.
+
+Color palette:
+
+soft blush pink
+baby pink
+cream
+warm white
+deep romantic red
+soft burgundy
+peach
+lavender accents
+
+Avoid neon colors.
+
+Avoid overly corporate gradients.
+
+Use subtle paper textures.
+
+Use tiny doodles.
+
+Use hand-drawn hearts.
+
+Use stars.
+
+Use flowers.
+
+Use bows where appropriate.
+
+Use cute cat illustrations.
+
+====================================================
+TYPOGRAPHY
+====================================================
+
+Use combination of:
+
+Elegant serif
+Handwritten/cursive
+Clean modern sans-serif
+
+Examples of style:
+
+large romantic serif headings
+handwritten captions
+clean body text
+
+Make fonts web-safe or load reliable Google Fonts.
+
+Do not use too many fonts.
+
+====================================================
+BACKGROUND DETAILS
+====================================================
+
+Throughout the website, occasionally use:
+
+floating hearts
+tiny stars
+doodles
+paper scraps
+tape stickers
+flowers
+bows
+sparkles
+cat silhouettes
+tiny handwritten arrows
+scribbles
+"hehe"
+"pookie"
+"us >>>"
+"core memory"
+"love u"
+
+But keep them tasteful.
+
+====================================================
+ANIMATION PHILOSOPHY
+====================================================
+
+Animations should be smooth and cinematic.
+
+Use:
+
+fade
+slide
+scale
+blur-to-focus
+clip-path reveal
+parallax
+horizontal movement
+staggered text
+scroll-triggered rotation
+image masking
+paper unfolding
+heart particles
+floating elements
+text reveal
+counter animation
+timeline progression
+
+Do NOT use excessive bouncing.
+
+Do NOT make everything spin.
+
+Do NOT use cheesy generic animations.
+
+Each section should have a different motion language.
+
+====================================================
+SCROLL STORYTELLING
+====================================================
+
+IMPORTANT:
+
+The scroll itself is part of the story.
+
+Use the scroll to reveal:
+
+photos
+letters
+memories
+messages
+timelines
+numbers
+videos
+jokes
+emotional text
+
+At various points, temporarily pin a section while content changes.
+
+Example:
+
+A photo stays fixed while captions change.
+
+Another section:
+
+Text stays fixed while photos move.
+
+Another:
+
+A timeline line grows as user scrolls.
+
+Another:
+
+A giant number changes from:
+
+1
+2
+3
+4
+5
+6
+
+Then becomes:
+
+∞
+
+====================================================
+MOBILE RESPONSIVENESS
+====================================================
+
+This is extremely important.
+
+The site must look beautiful on:
+
+mobile
+tablet
+desktop
+
+The primary target is mobile because this is an anniversary website.
+
+Do NOT simply shrink the desktop website.
+
+Create responsive layouts.
+
+On mobile:
+
+stack cards
+reduce excessive parallax
+keep text readable
+make buttons thumb-friendly
+ensure videos fit screen
+avoid horizontal overflow
+keep animations smooth
+
+====================================================
+MEDIA PERFORMANCE
+====================================================
+
+There are approximately 62 personal assets.
+
+Optimize loading.
+
+Use:
+
+lazy loading
+loading="lazy"
+poster images for videos
+intersection observers
+deferred video loading
+
+Do NOT load every video immediately.
+
+Videos should only load/play when approaching the viewport.
+
+Use object-fit: cover where appropriate.
+
+====================================================
+AUDIO
+====================================================
+
+DO NOT autoplay music with sound.
+
+Browsers may block it.
+
+Instead create an optional music button.
+
+A small floating button:
+
+♫
+
+Clicking enables music.
+
+Clicking again disables it.
+
+Remember user's preference during the session.
+
+====================================================
+CUSTOMIZATION CONFIG
+====================================================
+
+Create a single configuration file:
+
+src/config/anniversary.js
+
+It should contain:
+
+couple names
+anniversary title
+important dates
+first "I love you" date
+favorite message
+favorite photo
+playlist
+timeline
+reasons
+memories
+videos
+captions
+future bucket list
+letter text
+
+Example structure:
+
+export const anniversaryConfig = {
+  title: "6 Months of Us",
+  coupleNames: ["YOUR NAME", "THEIR NAME"],
+
+  secretCode: "0203",
+
+  secretHint:
+    "Hint: the date/month of the first time you said I LOVE YOU ❤️",
+
+  favoritePerson: "MY POOKIE",
+
+  memories: [],
+
+  timeline: [],
+
+  reasons: [],
+
+  openWhenLetters: [],
+
+  playlist: [],
+
+  finalMessage: ""
+};
+
+DO NOT hardcode everything into JSX components.
+
+====================================================
+ACCESSIBILITY
+====================================================
+
+Use:
+
+semantic HTML
+alt text
+keyboard navigation
+visible focus states
+aria labels
+reduced motion support
+
+If:
+
+prefers-reduced-motion: reduce
+
+then reduce animations significantly.
+
+====================================================
+INTERACTIONS
+====================================================
+
+Include many small delightful interactions.
+
+Examples:
+
+heart cursor trail on desktop, but subtle
+
+clicking a heart creates tiny particles
+
+hovering photos makes them lift
+
+clicking Polaroids opens them
+
+envelopes open
+
+timeline milestones expand
+
+reasons expand
+
+treasure hunt hearts disappear after clicking
+
+random memory button changes memory
+
+final button creates heart explosion
+
+====================================================
+IMPORTANT CONTENT RULE
+====================================================
+
+Do NOT fill the website with repetitive generic romance phrases.
+
+The writing should feel personal.
+
+Use placeholders where specific personal details are unknown.
+
+Examples:
+
+[OUR FIRST DATE]
+
+[THE PLACE WE FIRST MET]
+
+[YOUR NICKNAME]
+
+[OUR FAVORITE SONG]
+
+[OUR INSIDE JOKE]
+
+[MEMORY DATE]
+
+Make these extremely easy to replace.
+
+====================================================
+VISUAL HIERARCHY
+====================================================
+
+The website should have moments of:
+
+MAXIMUM VISUAL ENERGY
+
+followed by:
+
+QUIET MINIMAL MOMENTS
+
+followed by:
+
+FUNNY MOMENTS
+
+followed by:
+
+EMOTIONAL MOMENTS
+
+This creates emotional pacing.
+
+Do not make every section equally intense.
+
+====================================================
+IMPORTANT: DO NOT MAKE A GENERIC TEMPLATE
+====================================================
+
+I specifically DO NOT want:
+
+a normal navbar
+hero section
+three cards
+about section
+gallery
+footer
+
+That is NOT enough.
+
+I want a story.
+
+The website should feel like:
+
+OPENING A SECRET DIGITAL SCRAPBOOK
+
+then
+
+ENTERING OUR MEMORIES
+
+then
+
+LAUGHING
+
+then
+
+REMEMBERING
+
+then
+
+GETTING EMOTIONAL
+
+then
+
+ENDING WITH A LOVE LETTER.
+
+====================================================
+NAVIGATION
+====================================================
+
+Do not use a normal large navbar.
+
+Instead use a tiny floating progress indicator.
+
+Example:
+
+♡ 01 / 44
+
+or:
+
+MONTH 6 OF 6
+
+The indicator should subtly change based on scroll position.
+
+Also include a small floating button:
+
+↑
+
+that appears later for returning to top.
+
+====================================================
+NO SCROLL JACKING
+====================================================
+
+Do not hijack scrolling.
+
+Normal mouse wheel and touch scrolling must remain functional.
+
+Smooth scroll is allowed.
+
+Pinned scroll sections are allowed but should not make the page frustrating.
+
+====================================================
+LOADING SCREEN
+====================================================
+
+Before the love lock appears, use a tiny loading animation.
+
+Example:
+
+"collecting our memories..."
+
+then:
+
+"finding the pookie..."
+
+then:
+
+"almost ready ❤️"
+
+Keep it under a few seconds.
+
+====================================================
+ERROR HANDLING
+====================================================
+
+If media is missing:
+
+show a beautiful placeholder:
+
+"memory loading... ❤️"
+
+Do not crash.
+
+If video cannot load:
+
+show poster image and play button.
+
+If QR code is missing:
+
+show placeholder.
+
+====================================================
+CODE QUALITY
+====================================================
+
+Use reusable components.
+
+Suggested components:
+
+LoveLock
+Keypad
+UnlockAnimation
+ScrollProgress
+FloatingHearts
+SectionHeading
+Polaroid
+MemoryCard
+VideoMemory
+Timeline
+MonthChapter
+Envelope
+OpenWhenCard
+ReasonCard
+MemeCard
+CouponCard
+TreasureHunt
+ChatSimulation
+PlaylistCard
+LetterSection
+MemoryConstellation
+Awards
+Lightbox
+RandomMemory
+FinalSection
+HeartExplosion
+
+Keep the project organized.
+
+====================================================
+FOLDER STRUCTURE
+====================================================
+
+Use something similar to:
+
+src/
+  components/
+  sections/
+  data/
+  config/
+  assets/
+  styles/
+  utils/
+
+public/
+  assets/
+
+Make asset management easy.
+
+====================================================
+SEO / TAB
+====================================================
+
+Browser title:
+
+"6 Months of Us ❤️"
+
+Favicon:
+
+heart / pink heart / cute lock
+
+====================================================
+FINAL QUALITY BAR
+====================================================
+
+Before considering the project complete:
+
+TEST:
+
+- passcode 0203 works
+- incorrect password works
+- scrolling is locked before unlock
+- scrolling begins after unlock
+- animations work
+- videos don't break layout
+- photos load
+- lightbox works
+- mobile layout works
+- no horizontal overflow
+- no console errors
+- no broken imports
+- no broken routes
+- no inaccessible buttons
+- reduced motion works
+- final section works
+
+====================================================
+CRITICAL FINAL REQUIREMENT
+====================================================
+
+The finished website must feel like an actual digital anniversary gift.
+
+NOT a portfolio.
+
+NOT a SaaS landing page.
+
+NOT a generic romantic template.
+
+NOT a short Canva clone.
+
+It should feel like:
+
+"someone spent hours making this specifically for me."
+
+The first reaction should be:
+
+"WHAT IS THIS 😭❤️"
+
+The middle reaction should be:
+
+"OMG LOOK AT THIS MEMORY"
+
+The funny sections should make the partner laugh.
+
+The emotional sections should make them pause.
+
+The final section should make them genuinely emotional.
+
+====================================================
+VERY IMPORTANT: LENGTH
+====================================================
+
+MAKE IT HUGE.
+
+I want a very very very long scrolling experience.
+
+Do NOT finish after 8–10 sections.
+
+Use the full story structure described above.
+
+Make each major chapter visually substantial.
+
+The user should have to continuously scroll down through the relationship.
+
+Do NOT compress sections to save code.
+
+Do NOT replace sections with "etc."
+
+Actually implement them.
+
+If the implementation becomes large, that is expected.
+
+====================================================
+FINAL DEVELOPMENT INSTRUCTION
+====================================================
+
+First build the complete application architecture.
+
+Then implement the Love Lock.
+
+Then implement the scroll experience section-by-section.
+
+Then integrate media.
+
+Then add animations.
+
+Then optimize mobile.
+
+Then test the entire experience.
+
+Do not stop after creating the first few sections.
+
+Continue until the complete long-form anniversary experience is implemented.
+
+The final output should be a runnable Replit project.
+
+Make sure:
+
+npm install
+
+and
+
+npm run dev
+
+work correctly.
+
+If Replit requires a different start command, configure package.json accordingly.
+
+MOST IMPORTANT OF ALL:
+
+The password is:
+
+0203
+
+The password hint is:
+
+"the date/month of the first time you said I LOVE YOU"
+
+The main experience must remain inaccessible until the correct password is entered.
+
+The entire website should scream:
+
+"6 MONTHS OF US ❤️"
+
+"POOKIE CORE"
+
+"MEMORIES"
+
+"LOVE"
+
+"INSIDE JOKES"
+
+"62 PERSONAL MEMORIES"
+
+"AND A WHOLE LOT OF I LOVE YOU."

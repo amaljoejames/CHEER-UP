@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Six Months of Us"
+description = "A private, interactive anniversary memory website that turns a couple's photos and videos into a warm, scroll-driven digital scrapbook with playful moments, cinematic reveals, and a heartfelt ending."
+version = "1.0.0"
+id = "artifacts/six-months-of-us"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 21582
+
+[services.development]
+run = "pnpm --filter @workspace/six-months-of-us run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/six-months-of-us", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/six-months-of-us/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "21582"
+BASE_PATH = "/"
